@@ -245,7 +245,7 @@ article{
         display: flex;
         width: 100%;
         padding: 125px 10px;
-        font-size: 22px;
+        font-size: 18px;
         letter-spacing: 5px;
     }
 }
@@ -263,8 +263,101 @@ article{
 @media(max-width: 480px){
     .email, .submit{
         width: 100%;
+        margin-top: 10px;
     }
 }
 .submit:hover{
     background-color: var(--secundary-color);
+}
+
+/*footer*/
+
+.footer-finish{
+    width: 100%;
+    height: 250px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 480px){
+    .footer-finish{
+        width: 100%;
+        height: 300px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.footer-icons{
+    display: flex;  
+    width: 200px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+}
+@media (max-width:480px){
+    .footer-icons{
+        display: flex;  
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: 0;
+        gap: 10px;
+    }
+}
+.footer-width{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+@media(max-width: 480px){
+    .footer-width{
+        width: 100%;
+    }
+}
+.iconos{
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 50%; 
+}
+.footer-small{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+}
+@media(max-width:480px){
+    .footer-small{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        
+    }
+}
+.enlace{
+    text-decoration: none;
+    color: var(--secundary-color);
+    padding: 0 20px 0 20px;
+    font-size: 20px;
+}
+@media (max-width: 480px){
+    .enlace{
+        text-decoration: none;
+        color: var(--secundary-color);
+        padding: 10px 0;
+        font-size: 20px;
+    }
 }
